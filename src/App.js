@@ -1,18 +1,18 @@
-import Navbar from "./Navbar"
-import Pricing from "./pages/Pricing"
+import Header from "./components/Header"
+import Groups from "./pages/Groups"
 import Home from "./pages/Home"
-import About from "./pages/About"
+import Posts from "./pages/Posts"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/groups" element={<Groups />} />
         </Routes>
       </div>
     </>
